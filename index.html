@@ -4,243 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/80543da39c.js" crossorigin="anonymous"></script>
+    <title>Yasith Lankesha</title>
+
+    <!-- box font icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Web Developer & Software Developer</p>
-                <h1>Hi, I'm <span>Yasith</span><br>Lankesha from Sri Lanka</h1>
-            </div>
+    <!-- header section  -->
+    <header class="header">
+        <a href="#" class="logo">Yasith Lankesha</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Yasith Lankesha</h1>
+        <h3>And I'm <span class="multiple-text"></span></h3>
+        <p>Passionate Undergraduate software engineer with problem-solving skills and programming language knowledge. <br> I'm eager to learn and work on new projects.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/yasith.lankesha"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/lankesha_y"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/yasith.lankesha/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.linkedin.com/in/yasith-lankesha/"><i class='bx bxl-linkedin' ></i></a>
+            <a href=""><i class='bx bxl-whatsapp' ></i></a>
         </div>
+        <a href="docs/Yasith Lankesha-CV.pdf" class="btn" download>Download CV</a>
     </div>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hello, I'm Yasith Lankesha, an Undergraduate software engineer currently studying at the Informatics Institute of Technology in Sri Lanka, which is affiliated with the University of Westminster in the United Kingdom. In addition to my studies, I have a passion for Karate. I take pride in my website development skills and have a strong understanding of programming languages, including Java, Python, and Flutter among others. As a dedicated developer, I am always eager to learn about new technologies and processes in order to stay up-to-date with the latest industry trends. My ultimate goal is to become a proficient software engineer who can make significant contributions to the IT industry.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>Mobile App Development</span><br>Building android apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="projects">
-                        <ul>
-                            <li><span>Save Hearts - 2022</span><br>The National Blood Transfusion Service in Sri Lanka is a government-run organization that supplies blood and blood products to both government and private hospitals across the country. The service is made up of 24 cluster centers, 106 hospital-based blood banks, and 2 independent 
-                            blood centers. However, 102 of the hospital-based blood banks are currently operational. The organization is facing a problem where they are struggling to effectively organize blood donation camps, anticipate the amount of blood needed in the future, or notify donors of urgent blood requirements. This makes it difficult 
-                            for them to effectively use their resources and meet the demand for blood. The proposed web application aims to give solutions for these problems by providing a system to forecast blood amount, a notification system for urgent blood needs, and a system to manage blood donation camps.</li>
-                            <li><span>Raven Resort Hotel Project - 2022</span><br>This is our first year, second semester Web Design and Development group coursework</li>
-                            <li><span>Duothan-3.O - 2023</span><br>The University of NSBM Green University has a victory for the purpose of creating a website for a pharmacy. It is necessary to challenge a functional site that meet the specific needs of the pharmacy. Gaining practical experience on web development, the developers is an attractive opportunity to reflect their skills and creativity. Competition is a fun and role, and the participants will have the opportunity to get along with people and industries.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>BEng (Hons) Software Engineering (Sep 2021 - Present) University of Westminster</span><br>Relevant Modules:
-                            </li>
-                                <ul>
-                                    <li>Software Development I (Python)</li>
-                                    <li>Software Development II (Java)</li>
-                                    <li>Mathematics for Computing</li>
-                                    <li>Computer System Fundamentals</li>
-                                    <li>Web Design and Development (html , css , java-script)</li>
-                                    <li>Trends in Computer Science</li>
-                                </ul>
-                            <li><span>Advanced Level - 2020 - Royal College Panadura</span><br>Grades Achieved:</li>
-                            <ul>
-                                <li>Combined Maths - S</li>
-                                <li>Chemistry - S</li>
-                                <li>Physics - S</li>
-                            </ul>
-                            <li><span>Ordinary Level - 2017 - Royal College Panadura</span><br>Grades Achieved:</li>
-                            <ul>
-                                <li>Maths - A</li>
-                                <li>Sinhala - A</li>
-                                <li>ICT - A</li>
-                                <li>Buddhism - B</li>
-                                <li>Art - B</li>
-                                <li>History - B</li>
-                                <li>English - C</li>
-                                <li>Science - C</li>
-                                <li>Commerce - C</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="home-img">
+        <img src="images/yasith-main.jpg" alt="">
     </div>
+</section>
+
+<!-- about section  -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/yasith-main.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Undergraduate Software Engineer</h3>
+        <p>Hello, I'm Yasith Lankesha, an Undergraduate software engineer currently studying at the Informatics Institute of Technology in Sri Lanka, which is affiliated with the University of Westminster in the United Kingdom. In addition to my studies, I have a passion for Karate. I take pride in my website development skills and have a strong understanding of programming languages, including Java, Python, and Flutter among others. As a dedicated developer, I am always eager to learn about new technologies and processes in order to stay up-to-date with the latest industry trends. My ultimate goal is to become a proficient software engineer who can make significant contributions to the IT industry.</p>
     
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>I develop responsive websites using HTML, CSS, JavaScript, php and WordPress.</p>
-                    <a href="#contact">Contact Me</a>
-                </div>
-                <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>I use figma and Photoshop for UI/UX design..</p>
-                    <a href="#contact">Contact Me</a>
-                </div>
-                <div>
-                    <i class="fab fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>I use Flutter and android studio to create mobile apps.</p>
-                    <a href="#contact">Contact Me</a>
-                </div>
-            </div>
+        <a href="https://www.linkedin.com/in/yasith-lankesha/" class="btn" target="_blank"><i class='bx bxl-linkedin-square'></i>Linkedin</a>
+    </div>
+</section>
+
+<!-- services section  -->
+<section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p>I develop responsive, visually appealing websites using HTML, CSS, JavaScript, Bootstrap, php, and WordPress. Committed to delivering innovative solutions.</p>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bxs-paint'></i>
+            <h3>Graphic Design</h3>
+            <p>My graphic design projects showcase my creativity and attention to detail, bringing ideas to life through branding, logos, illustrations, and digital art.</p>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-bar-chart-alt' ></i>
+            <h3>Digital Marketing</h3>
+            <p>My digital marketing projects demonstrate my ability to develop effective strategies for social media, email campaigns, SEO, and PPC advertising to achieve business goals.</p>
+            <a href="#contact" class="btn">Contact</a>
         </div>
     </div>
+</section>
 
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Works</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/web.png">
-                    <div class="layer">
-                        <h3>Web Development</h3>
-                        <p>Above is the web page we created for a new hotel.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/software.png">
-                    <div class="layer">
-                        <h3>Software Development</h3>
-                        <p>Above is the web page we created for a new hotel.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/mobile.png">
-                    <div class="layer">
-                        <h3>Mobile App Development</h3>
-                        <p>Above is the web page we created for a new hotel.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>  
-            </div>
-            <a href="https://github.com/yasithlankesha24?tab=repositories" class="btn">See more</a>
-        </div>
-    </div>
+<!-- Protfolio section  -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
 
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>yasith.lankezz@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>(+94) 76 863 4181</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/yasith.lankesha"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/yasith_46/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/yasith-lankesha/"><i class="fa-brands fa-linkedin"></i></i></a>
-                        <a href="https://github.com/yasithlankesha24"><i class="fa-brands fa-github"></i></i></a>
-                    </div>
-                    <a href="docs/SE_Yasith Lankesha_CV.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <input type="text" name="Mobile Number" placeholder="Your Mobile Number" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Send Message</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+    <div class="portfolio-container">
+
+        <div class="portfolio-box">
+            <img src="images/project-Save_Hearts.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Save Hearts</h4>
+                <!p>I design, develop, and deploy web solutions with a focus on user experience, accessibility, and performance.</p>
+                <a href="https://github.com/Dulmina98/save-hearts" target="_blank"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © 2023 by Yasith Lankesha | All Rights Reserved. </p>
+
+        <div class="portfolio-box">
+            <img src="images/project-hometeq.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Hometeq</h4>
+                <!p>I've developed software solutions that solve complex problems and automate business processes.</p>
+                <a href="https://github.com/yasithlankesha24/hometeq-project" target="_blank"><i class='bx bx-link-external' ></i></a>
+            </div>
         </div>
+
+        <div class="portfolio-box">
+            <img src="images/project-calculator.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Calculator</h4>
+                <!p>I've designed and developed mobile applications that deliver seamless user experiences.</p>
+                <a href="https://github.com/yasithlankesha24/react-calculator" target="_blank"><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+        
     </div>
+</section>
 
-<script>
+<!-- cotact section  -->
+<section class="contact" id="contact">
+     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+     <form action="mailto:yasith.lankezz@gmail.com" method="post" enctype="text/plain">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name" name="Full Name ">
+            <input type="email" placeholder="Email Address" name="Email Address ">
+        </div>
 
-    function opentab(tabname) {
-        for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
+        <div class="input-box">
+            <input type="text" placeholder="Mobile Number" name="Mobile Number ">
+            <input type="text" placeholder="Email Subject" name="Email Subject " id="suject" class="form-control">
+        </div>
 
-        for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="form-control"></textarea>
+        <input type="submit" id="mail-link" value="Send Message" class="btn">
+    </form>
+</section>
 
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+<!-- footer section  -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by <a href="https://www.linkedin.com/in/yasith-lankesha/" target="_blank">Yasith Lankesha</a> | All Rights Reserved.</p>
+    </div>
+</footer>
 
-</script>
+<!-- scroll to top button  -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-up-arrow-alt' ></i></button>
 
-<script>
+<!-- scroll reveal  -->
+<script src="https://unpkg.com/scrollreveal"></script>
 
-    var sidemenu = document.getElementById("sidemenu");
+<!-- typed js  -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
-
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPKmbGEKyQt9yorv6Vll0QVWpWdynWDTcHS_PEqSmI8boCMCTO0jsukujtujqA5hQr/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+<!-- java script link  -->
+<script src="script.js"></script>
 </body>
 </html>
